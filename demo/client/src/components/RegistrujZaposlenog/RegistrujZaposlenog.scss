@@ -1,0 +1,45 @@
+.registruj-zaposlenog-wrapper {
+  form {
+    background-color: white;
+    padding: 20px;
+  }
+  .flex-end {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .flex {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    input, textarea, select {
+      background: #E5E5E5;
+      box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.25);
+      border: 0;
+      outline: none;
+      padding: 5px;
+      border-radius: 3px;
+      margin-right: 5px;
+      font-family: inherit;
+    }
+    > :first-child {
+      flex: 0 0 100px;
+    }
+    > :last-child {
+      flex: 1 0 auto;
+    }
+    button {
+      border: 0;
+      border-radius: 3px;
+      margin-left: 5px;
+      padding: 10px 20px;
+      font-weight: bold;
+    }
+    button[type="submit"] {
+      background-color: #5FE349;
+    }
+    .inner-flex {
+      display: flex;
+      > * { flex: 1 0 auto; }
+    }
+  }
+}
